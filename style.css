@@ -1,0 +1,992 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #030914;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    min-height: 85px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #030914;
+    border-bottom: 1px solid #142746;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo h2 {
+    font-size: 21px;
+    letter-spacing: 0.5px;
+}
+
+.logo h2 span,
+footer h2 span {
+    color: #1677FF;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #006AFF, #00A8FF);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px #006AFF55;
+}
+
+.cabecalho nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.cabecalho nav a {
+    color: #D0D9E9;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.cabecalho nav a:hover,
+.cabecalho nav a.ativo {
+    color: #1685FF;
+}
+
+.botao-contato {
+    padding: 14px 24px;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #006AFF, #168CFF);
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 20px #006AFF66;
+    transition: 0.3s;
+}
+
+.botao-contato:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px #168CFFAA;
+}
+
+
+/* BANNER PRINCIPAL */
+
+.inicio {
+    min-height: 490px;
+    padding: 70px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 80% 60%, #003D9B55, transparent 45%),
+        linear-gradient(110deg, #030914 35%, #06152F 100%);
+}
+
+.conteudo {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.subtitulo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #1A91FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.raio {
+    font-size: 22px;
+}
+
+.conteudo h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 22px;
+    letter-spacing: -2px;
+}
+
+.conteudo h1 span {
+    color: #087AFF;
+}
+
+.conteudo p {
+    color: #C4D0E2;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 610px;
+    margin-bottom: 26px;
+}
+
+.botao-principal {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 19px 27px;
+    border-radius: 15px;
+    background: linear-gradient(120deg, #006BFF, #168DFF);
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 25px #006AFF77;
+    transition: 0.3s;
+}
+
+.botao-principal span {
+    font-size: 23px;
+}
+
+.botao-principal:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 35px #168CFFAA;
+}
+
+
+/* DESTAQUE DA IMAGEM */
+
+.destaque-imagem {
+    width: 48%;
+    height: 390px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.celular-destaque {
+    width: 390px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 25px;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 15px 35px #006AFF66);
+}
+
+.anel {
+    position: absolute;
+    border: 2px solid #087AFF;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #087AFF;
+}
+
+.anel-1 {
+    width: 550px;
+    height: 170px;
+    transform: rotate(-15deg);
+}
+
+.anel-2 {
+    width: 500px;
+    height: 130px;
+    transform: rotate(15deg);
+    border-color: #00B7FF;
+}
+
+.anel-3 {
+    width: 430px;
+    height: 100px;
+    transform: rotate(-5deg);
+    border-color: #0055FF;
+}
+
+.base-luminosa {
+    position: absolute;
+    width: 400px;
+    height: 25px;
+    bottom: 20px;
+    background: #087AFF;
+    border-radius: 50%;
+    filter: blur(30px);
+}
+
+
+/* CATEGORIAS */
+
+.categorias {
+    padding: 40px 6% 65px;
+    background: #030914;
+}
+
+.titulo-categorias {
+    margin-bottom: 25px;
+}
+
+.linha-azul {
+    display: block;
+    width: 55px;
+    height: 4px;
+    border-radius: 5px;
+    background: #087AFF;
+    margin-bottom: 14px;
+}
+
+.titulo-categorias h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.titulo-categorias h2 span {
+    color: #087AFF;
+}
+
+
+/* CARTÕES DE CATEGORIAS */
+
+.lista-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.categoria {
+    min-width: 0;
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 25px;
+    border: 1px solid #17417B;
+    border-radius: 20px;
+    background:
+        radial-gradient(circle at 10% 50%, #0750A733, transparent 50%),
+        linear-gradient(120deg, #0A152B, #071124);
+    transition: 0.3s;
+}
+
+.categoria:hover {
+    border-color: #168CFF;
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #006AFF33;
+}
+
+
+/* ÍCONES DAS CATEGORIAS */
+
+.icone-categoria {
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+/* ÍCONE APPLE EM SVG */
+
+.icone-categoria.apple svg {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+/* LOGOTIPO SAMSUNG */
+
+.icone-categoria.samsung {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+/* ÍCONE DE USADOS */
+
+.icone-categoria.usados {
+    color: #168CFF;
+    font-size: 60px;
+    line-height: 1;
+}
+
+
+/* TEXTO DOS CARTÕES */
+
+.texto-categoria {
+    min-width: 0;
+}
+
+.texto-categoria h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.texto-categoria p {
+    color: #B9C7DB;
+    font-size: 14px;
+}
+
+
+/* SETAS */
+
+.seta-categoria {
+    margin-left: auto;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background: #0A2250;
+    border: 1px solid #087AFF;
+    transition: 0.3s;
+}
+
+.categoria:hover .seta-categoria {
+    background: #087AFF;
+}
+
+
+/* CATÁLOGO */
+
+.produtos {
+    padding: 80px 6%;
+    background: #07101F;
+}
+
+.titulo-produtos {
+    margin-bottom: 35px;
+}
+
+.titulo-produtos h2 {
+    font-size: 35px;
+    margin: 12px 0;
+}
+
+.titulo-produtos p {
+    color: #A8B7CD;
+    font-size: 15px;
+}
+
+
+/* FILTROS */
+
+.filtros-produtos {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.filtros-produtos input,
+.filtros-produtos select {
+    padding: 15px;
+    background: #0C1A30;
+    border: 1px solid #1D3558;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+    outline: none;
+}
+
+.filtros-produtos input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filtros-produtos input:focus,
+.filtros-produtos select:focus {
+    border-color: #087AFF;
+}
+
+.filtros-produtos select {
+    cursor: pointer;
+}
+
+.filtros-produtos select option {
+    background: #0C1A30;
+}
+
+.filtros-produtos button {
+    padding: 15px 22px;
+    background: #087AFF;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtros-produtos button:hover {
+    background: #0054CC;
+}
+
+
+/* PRODUTOS */
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.produto {
+    position: relative;
+    overflow: hidden;
+    background: #0C1A30;
+    border: 1px solid #1C3559;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-7px);
+    border-color: #087AFF;
+    box-shadow: 0 10px 30px #006AFF22;
+}
+
+.foto-produto {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background: #101E35;
+}
+
+.novo,
+.usado {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    border-radius: 20px;
+    padding: 7px 12px;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.novo {
+    background: #087AFF;
+}
+
+.usado {
+    background: #263A57;
+    color: #D9E7FA;
+}
+
+.informacoes-produto {
+    padding: 22px;
+}
+
+.informacoes-produto span {
+    color: #168CFF;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.informacoes-produto h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.informacoes-produto p {
+    color: #A8B7CD;
+    font-size: 13px;
+}
+
+.preco {
+    font-size: 22px;
+    margin: 18px 0;
+}
+
+.botao-produto {
+    display: block;
+    text-align: center;
+    padding: 13px;
+    background: linear-gradient(120deg, #006BFF, #168CFF);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-produto:hover {
+    box-shadow: 0 0 20px #087AFF66;
+    background: #0054CC;
+}
+
+
+/* MENSAGEM SEM RESULTADOS */
+
+.mensagem-vazia {
+    color: #A8B7CD;
+    text-align: center;
+    padding: 35px 10px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    padding: 55px 6%;
+    text-align: center;
+    background: #030914;
+    border-top: 1px solid #142746;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+footer p {
+    color: #A8B7CD;
+    font-size: 13px;
+    margin: 12px 0;
+}
+
+
+/* TABLETS */
+
+@media (max-width: 1100px) {
+
+    .conteudo h1 {
+        font-size: 46px;
+    }
+
+    .destaque-imagem {
+        width: 42%;
+    }
+
+    .celular-destaque {
+        width: 240px;
+    }
+
+    .lista-produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .categoria {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .icone-categoria {
+        width: 60px;
+        min-width: 60px;
+    }
+
+}
+
+
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .cabecalho nav {
+        width: 100%;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    .botao-contato {
+        display: none;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 5% 35px;
+    }
+
+    .conteudo h1 {
+        font-size: 42px;
+    }
+
+    .conteudo p {
+        font-size: 15px;
+    }
+
+    .destaque-imagem {
+        width: 100%;
+        height: 330px;
+    }
+
+    .celular-destaque {
+        width: 220px;
+        height: 270px;
+    }
+
+    .anel-1 {
+        width: 350px;
+    }
+
+    .anel-2 {
+        width: 320px;
+    }
+
+    .anel-3 {
+        width: 280px;
+    }
+
+    .categorias,
+    .produtos {
+        padding: 50px 5%;
+    }
+
+    .lista-categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-categorias h2,
+    .titulo-produtos h2 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 550px) {
+
+    .logo h2 {
+        font-size: 17px;
+    }
+
+    .icone {
+        width: 43px;
+        height: 43px;
+    }
+
+    .cabecalho nav {
+        gap: 14px;
+    }
+
+    .cabecalho nav a {
+        font-size: 12px;
+    }
+
+    .conteudo h1 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    .subtitulo {
+        font-size: 11px;
+    }
+
+    .botao-principal {
+        padding: 16px 20px;
+        font-size: 14px;
+    }
+
+    .lista-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros-produtos {
+        flex-direction: column;
+    }
+
+    .filtros-produtos input,
+    .filtros-produtos select,
+    .filtros-produtos button {
+        width: 100%;
+    }
+
+    .categoria {
+        min-height: 110px;
+    }
+
+    .icone-categoria {
+        width: 55px;
+        min-width: 55px;
+    }
+
+    .icone-categoria.apple svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icone-categoria.usados {
+        font-size: 45px;
+    }
+
+    .icone-categoria.samsung {
+        font-size: 11px;
+    }
+
+    .texto-categoria h3 {
+        font-size: 18px;
+    }
+
+    .texto-categoria p {
+        font-size: 12px;
+    }
+
+    .seta-categoria {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+        font-size: 22px;
+    }
+
+    
+
+}
+
+/* =================================
+   SEÇÃO TRADE-IN
+================================= */
+
+.trade-in {
+    padding: 90px 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+
+    background:
+        radial-gradient(circle at 10% 50%, #063C8055, transparent 40%),
+        #030914;
+}
+
+
+/* TEXTO DE APRESENTAÇÃO */
+
+.trade-in-conteudo {
+    max-width: 550px;
+}
+
+.trade-in-conteudo h2 {
+    font-size: 43px;
+    line-height: 1.2;
+    margin: 15px 0 20px;
+}
+
+.trade-in-conteudo h2 span {
+    color: #087AFF;
+}
+
+.trade-in-conteudo > p {
+    color: #B9C7DB;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* ETAPAS DA TROCA */
+
+.etapas-trade {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.etapa {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.etapa > span {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0B2850;
+    border: 1px solid #087AFF;
+    border-radius: 12px;
+
+    color: #168CFF;
+    font-weight: bold;
+}
+
+.etapa h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.etapa p {
+    color: #A8B7CD;
+    font-size: 13px;
+}
+
+
+/* FORMULÁRIO */
+
+.formulario-trade {
+    padding: 35px;
+
+    background: linear-gradient(145deg, #0D1D35, #071225);
+    border: 1px solid #1C467B;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 45px #00000033;
+}
+
+.titulo-formulario {
+    margin-bottom: 25px;
+}
+
+.titulo-formulario h3 {
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
+.titulo-formulario p {
+    color: #A8B7CD;
+    font-size: 13px;
+}
+
+
+/* CAMPOS DO FORMULÁRIO */
+
+#form-trade {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-trade label {
+    color: #D8E5F5;
+    font-size: 13px;
+    margin: 15px 0 8px;
+}
+
+#form-trade input,
+#form-trade select {
+    width: 100%;
+    padding: 14px;
+
+    color: #FFFFFF;
+    background: #071326;
+
+    border: 1px solid #263E60;
+    border-radius: 9px;
+
+    outline: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+#form-trade input:focus,
+#form-trade select:focus {
+    border-color: #087AFF;
+    box-shadow: 0 0 10px #087AFF22;
+}
+
+#form-trade select option {
+    background: #071326;
+    color: white;
+}
+
+
+/* BOTÃO DE AVALIAÇÃO */
+
+.botao-trade {
+    margin-top: 25px;
+    padding: 16px;
+
+    border: none;
+    border-radius: 12px;
+
+    color: white;
+    background: linear-gradient(120deg, #006BFF, #168CFF);
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao-trade:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #087AFF66;
+}
+
+.aviso-trade {
+    margin-top: 15px;
+    color: #8496B0;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* =================================
+   RESPONSIVIDADE DO TRADE-IN
+================================= */
+
+@media (max-width: 900px) {
+
+    .trade-in {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .trade-in-conteudo {
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .trade-in {
+        padding: 55px 5%;
+    }
+
+    .trade-in-conteudo h2 {
+        font-size: 32px;
+    }
+
+    .formulario-trade {
+        padding: 22px;
+    }
+
+    .titulo-formulario h3 {
+        font-size: 21px;
+    }
+
+}

@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech Phones - Smartphones novos e usados com qualidade, confiança e ótimos preços.">
+    <title>Tech Phones | Smartphones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <a href="#inicio" class="logo">
+            <span class="icone">TP</span>
+            <h2>TECH <span>PHONES</span></h2>
+        </a>
+
+        <nav>
+            <a href="#inicio" class="ativo">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#trade-in">Trade-in</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <a
+            href="https://wa.me/5511983437074"
+            class="botao-contato"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            WhatsApp | Contato
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="inicio" id="inicio">
+
+            <div class="conteudo">
+
+                <span class="subtitulo">
+                    <span class="raio">ϟ</span>
+                    TECNOLOGIA AO SEU ALCANCE
+                </span>
+
+                <h1>
+                    Encontre seu
+                    <br>
+                    próximo <span>smartphone</span>
+                </h1>
+
+                <p>
+                    Os melhores smartphones, novos e usados,
+                    com qualidade, confiança e ótimos preços.
+                </p>
+
+                <a href="#produtos" class="botao-principal">
+                    Explorar produtos <span>→</span>
+                </a>
+
+            </div>
+
+            <!-- IMAGEM DO BANNER -->
+            <div class="destaque-imagem">
+
+                <div class="anel anel-1"></div>
+                <div class="anel anel-2"></div>
+                <div class="anel anel-3"></div>
+
+                <div class="base-luminosa"></div>
+
+                <img
+                    src="https://uniu.com.tw/cdn/shop/files/iphone-17-pro-max-oi-6791905.png?v=1778338783"
+                    alt="Smartphone em destaque"
+                    class="celular-destaque"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categorias" id="categorias">
+
+            <div class="titulo-categorias">
+
+                <span class="linha-azul"></span>
+
+                <h2>
+                    Explore por <span>categoria</span>
+                </h2>
+
+            </div>
+
+            <div class="lista-categorias">
+
+                <!-- CATEGORIA APPLE -->
+                <a href="#produtos" class="categoria">
+
+                    <div class="icone-categoria apple">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            aria-label="Apple"
+                            role="img"
+                        >
+                            <path
+                                fill="#FFFFFF"
+                                d="M17.05 20.28c-.96.95-2 1.91-3.57 1.93-1.55.02-2.05-.95-3.84-.95-1.8 0-2.35.93-3.82.98-1.53.06-2.7-1.04-3.67-1.99C-.82 14.1.1 7.1 4.5 6.7c1.7-.15 3.3 1.1 4.4 1.1 1.1 0 3.2-1.4 5.4-1.2 1 .05 3.8.4 5.6 3.1-4.9 3-4.1 9.3-.9 10.6zM12.03 5.4c.8-1 1.4-2.4 1.2-3.8-1.2.1-2.6.9-3.4 1.9-.8.9-1.5 2.3-1.3 3.6 1.3.1 2.7-.7 3.5-1.7z"
+                            />
+                        </svg>
+
+                    </div>
+
+                    <div class="texto-categoria">
+                        <h3>Apple</h3>
+                        <p>iPhones selecionados</p>
+                    </div>
+
+                    <span class="seta-categoria">→</span>
+
+                </a>
+
+
+                <!-- CATEGORIA SAMSUNG -->
+                <a href="#produtos" class="categoria">
+
+                    <div class="icone-categoria samsung">
+                        SAMSUNG
+                    </div>
+
+                    <div class="texto-categoria">
+                        <h3>Samsung</h3>
+                        <p>Tecnologia Galaxy</p>
+                    </div>
+
+                    <span class="seta-categoria">→</span>
+
+                </a>
+
+
+                <!-- CATEGORIA USADOS -->
+                <a href="#produtos" class="categoria">
+
+                    <div class="icone-categoria usados">
+                        ⟳
+                    </div>
+
+                    <div class="texto-categoria">
+                        <h3>Usados</h3>
+                        <p>Qualidade e economia</p>
+                    </div>
+
+                    <span class="seta-categoria">→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section class="produtos" id="produtos">
+
+            <div class="titulo-produtos">
+
+                <span class="subtitulo">NOSSO CATÁLOGO</span>
+
+                <h2>Smartphones em destaque</h2>
+
+                <p>Encontre o aparelho ideal para você.</p>
+
+            </div>
+
+
+            <!-- FILTROS -->
+            <div class="filtros-produtos">
+
+                <input
+                    type="text"
+                    id="pesquisa"
+                    placeholder="Pesquisar smartphone..."
+                >
+
+                <select id="filtro-marca">
+                    <option value="todos">Todas as marcas</option>
+                    <option value="apple">Apple</option>
+                    <option value="samsung">Samsung</option>
+                </select>
+
+                <select id="filtro-condicao">
+                    <option value="todos">Todas as condições</option>
+                    <option value="novo">Novos</option>
+                    <option value="usado">Usados</option>
+                </select>
+
+                <button type="button" id="limpar-filtros">
+                    Limpar filtros
+                </button>
+
+            </div>
+
+
+            <!-- LISTA DE APARELHOS -->
+            <div class="lista-produtos">
+
+                <!-- IPHONE 15 -->
+                <div class="produto" data-marca="apple" data-condicao="novo">
+
+                    <span class="novo">NOVO</span>
+
+                    <img
+                        class="foto-produto"
+                        src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500"
+                        alt="iPhone 15"
+                    >
+
+                    <div class="informacoes-produto">
+
+                        <span>APPLE</span>
+                        <h3>iPhone 15</h3>
+                        <p>128GB | Preto</p>
+
+                        <h2 class="preco">R$ 4.299,00</h2>
+
+                        <a
+                            href="https://wa.me/5511983437074?text=Tenho%20interesse%20no%20iPhone%2015"
+                            class="botao-produto"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Consultar aparelho
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- IPHONE 13 -->
+                <div class="produto" data-marca="apple" data-condicao="usado">
+
+                    <span class="usado">USADO</span>
+
+                    <img
+                        class="foto-produto"
+                        src="https://t.ctcdn.com.br/tdGfmF2ICT1VYLpX_XL1qJJd1-I=/640x360/smart/i532597.jpeg"
+                        alt="iPhone 13"
+                    >
+
+                    <div class="informacoes-produto">
+
+                        <span>APPLE</span>
+                        <h3>iPhone 13</h3>
+                        <p>128GB | Meia-noite</p>
+
+                        <h2 class="preco">R$ 2.199,00</h2>
+
+                        <a
+                            href="https://wa.me/5511983437074?text=Tenho%20interesse%20no%20iPhone%2013"
+                            class="botao-produto"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Consultar aparelho
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- GALAXY S24 -->
+                <div class="produto" data-marca="samsung" data-condicao="novo">
+
+                    <span class="novo">NOVO</span>
+
+                    <img
+                        class="foto-produto"
+                        src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500"
+                        alt="Samsung Galaxy S24"
+                    >
+
+                    <div class="informacoes-produto">
+
+                        <span>SAMSUNG</span>
+                        <h3>Galaxy S24</h3>
+                        <p>256GB | Cinza</p>
+
+                        <h2 class="preco">R$ 3.499,00</h2>
+
+                        <a
+                            href="https://wa.me/5511983437074?text=Tenho%20interesse%20no%20Galaxy%20S24"
+                            class="botao-produto"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Consultar aparelho
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- GALAXY S22 -->
+                <div class="produto" data-marca="samsung" data-condicao="usado">
+
+                    <span class="usado">USADO</span>
+
+                    <img
+                        class="foto-produto"
+                        src="https://s2-techtudo.glbimg.com/OsyWPkKtlvgSCuywl9eLB243wBQ=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/L/w/UOZaCUT7m417A3kMCW5A/galaxy-022-techtudo-01-1-.jpg"
+                        alt="Samsung Galaxy S22"
+                    >
+
+                    <div class="informacoes-produto">
+
+                        <span>SAMSUNG</span>
+                        <h3>Galaxy S22</h3>
+                        <p>128GB | Preto</p>
+
+                        <h2 class="preco">R$ 1.699,00</h2>
+
+                        <a
+                            href="https://wa.me/5511983437074?text=Tenho%20interesse%20no%20Galaxy%20S22"
+                            class="botao-produto"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Consultar aparelho
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="mensagem-vazia" class="mensagem-vazia" hidden>
+                Nenhum aparelho encontrado.
+            </p>
+
+        </section>
+
+
+        <!-- SEÇÃO TRADE-IN -->
+        <section class="trade-in" id="trade-in">
+
+            <div class="trade-in-conteudo">
+
+                <span class="subtitulo">TROQUE SEU SMARTPHONE</span>
+
+                <h2>
+                    Seu celular usado pode valer
+                    <span>um novo começo.</span>
+                </h2>
+
+                <p>
+                    Utilize seu aparelho usado como parte do pagamento
+                    na compra de um novo smartphone. É simples, rápido
+                    e seguro!
+                </p>
+
+                <div class="etapas-trade">
+
+                    <div class="etapa">
+                        <span>01</span>
+
+                        <div>
+                            <h3>Informe seu aparelho</h3>
+                            <p>Preencha os dados do seu smartphone.</p>
+                        </div>
+                    </div>
+
+                    <div class="etapa">
+                        <span>02</span>
+
+                        <div>
+                            <h3>Receba uma avaliação</h3>
+                            <p>Nossa equipe analisará as informações.</p>
+                        </div>
+                    </div>
+
+                    <div class="etapa">
+                        <span>03</span>
+
+                        <div>
+                            <h3>Faça sua troca</h3>
+                            <p>Use o valor avaliado na compra de outro aparelho.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULÁRIO TRADE-IN -->
+            <div class="formulario-trade">
+
+                <div class="titulo-formulario">
+                    <h3>Solicite sua avaliação</h3>
+                    <p>Preencha as informações do seu aparelho.</p>
+                </div>
+
+                <form id="form-trade">
+
+                    <label for="nome">Seu nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                    <label for="marca-trade">Marca do aparelho</label>
+                    <select id="marca-trade" required>
+                        <option value="">Selecione a marca</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Motorola">Motorola</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Outra">Outra</option>
+                    </select>
+
+                    <label for="modelo-trade">Modelo do aparelho</label>
+                    <input
+                        type="text"
+                        id="modelo-trade"
+                        placeholder="Ex: iPhone 13"
+                        required
+                    >
+
+                    <label for="armazenamento">Armazenamento</label>
+                    <select id="armazenamento" required>
+                        <option value="">Selecione</option>
+                        <option value="64GB">64GB</option>
+                        <option value="128GB">128GB</option>
+                        <option value="256GB">256GB</option>
+                        <option value="512GB">512GB</option>
+                        <option value="1TB">1TB</option>
+                        <option value="Não sei">Não sei</option>
+                    </select>
+
+                    <label for="estado">Estado de conservação</label>
+                    <select id="estado" required>
+                        <option value="">Selecione</option>
+                        <option value="Excelente">Excelente - sem marcas</option>
+                        <option value="Bom">Bom - pequenas marcas</option>
+                        <option value="Regular">Regular - marcas de uso</option>
+                        <option value="Ruim">Ruim - danos visíveis</option>
+                    </select>
+
+                    <label for="defeitos">Possui algum defeito?</label>
+                    <select id="defeitos" required>
+                        <option value="">Selecione</option>
+                        <option value="Não possui defeitos">Não possui</option>
+                        <option value="Tela danificada">Tela danificada</option>
+                        <option value="Bateria com problema">Problema na bateria</option>
+                        <option value="Problemas de funcionamento">Problemas de funcionamento</option>
+                        <option value="Outro defeito">Outro</option>
+                    </select>
+
+                    <label for="acessorios">Possui acessórios?</label>
+                    <select id="acessorios" required>
+                        <option value="">Selecione</option>
+                        <option value="Caixa e carregador">Caixa e carregador</option>
+                        <option value="Somente carregador">Somente carregador</option>
+                        <option value="Somente caixa">Somente caixa</option>
+                        <option value="Nenhum acessório">Nenhum</option>
+                    </select>
+
+                    <button type="submit" class="botao-trade">
+                        Solicitar avaliação pelo WhatsApp →
+                    </button>
+
+                    <p class="aviso-trade">
+                        A avaliação final depende da análise física do aparelho.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer id="sobre">
+
+        <h2>TECH <span>PHONES</span></h2>
+
+        <p>
+            Tecnologia, qualidade e confiança
+            para conectar você ao futuro.
+        </p>
+
+        <p>© 2026 Tech Phones. Todos os direitos reservados.</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
